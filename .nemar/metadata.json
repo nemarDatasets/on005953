@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "iEEG_visual",
+  "description": "This intracranial EEG dataset contains recordings from 2 subjects performing a visual task involving presentation of gratings and noise patterns. The dataset includes raw ECoG data, stimulus files, and metadata organized according to BIDS specification. The data were collected to investigate stimulus-dependent gamma oscillations in human visual cortex and the relationship between neuronal synchrony and hemodynamic responses.",
+  "methods_description": "Subjects performed a visual fixation task while viewing images spanning approximately 25×25 degrees of visual angle. Stimuli included high-contrast vertical gratings (0.16, 0.33, 0.65, or 1.3 duty cycles per degree square wave) and noise patterns with varying spectral power distributions (k/f^4, k/f^2, k/f^0). A central fixation dot alternated between red and green at random intervals. Subject 1 performed button presses upon color changes; Subject 2 maintained fixation without manual responses. ECoG data were recorded using the Brainvision data format.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -10,12 +12,29 @@
       "orcid": "0000-0002-8683-8909"
     }
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds005953.v1.0.0",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "intracranial EEG"
     },
+    {
+      "term": "electrocorticography"
+    },
+    {
+      "term": "Visual Cortex",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D014793"
+    },
+    {
+      "term": "gamma oscillations"
+    },
+    {
+      "term": "local field potential"
+    },
+    {
+      "term": "visual stimulus"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on005953",
       "identifier_type": "URL",
@@ -35,6 +54,11 @@
       "identifier": "10.1371/journal.pbio.2001461",
       "identifier_type": "DOI",
       "relation_type": "IsReferencedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds005953.v1.0.0",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "funding_references": [
@@ -47,12 +71,12 @@
       "award_number": "016.VENI.178.048"
     }
   ],
+  "resource_type_specific": "iEEG Dataset",
   "modalities": [
     "ieeg"
   ],
-  "resource_type_specific": "iEEG Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "668.2 MB (207 files)"
   ],
   "formats": [
     ".eeg",
@@ -62,29 +86,8 @@
     ".png",
     ".tsv",
     ".vhdr",
-    ".vmrk"
+    ".vmrk",
+    ".yml"
   ],
-  "description": "This intracranial EEG dataset comprises recordings from 2 subjects performing a visual task involving presentation of gratings and noise patterns. The dataset was collected to investigate stimulus-dependent gamma oscillations in human visual cortex and the relationship between neuronal synchrony and the blood-oxygen-level dependent response. Raw data are organized according to the BIDS specification and include electrocorticographic recordings, event timing metadata, and visual stimulus images.",
-  "methods_description": "Subjects were presented with visual stimuli (high-contrast vertical gratings with varying duty cycles and noise patterns) displayed on a computer screen spanning approximately 25×25 degrees of visual angle. Subjects maintained fixation on a centrally-located dot that alternated between red and green at random intervals. Subject 1 performed a button-press response task upon color changes, while Subject 2 maintained fixation without manual responses. Intracranial EEG data were collected using the BrainVision data format.",
-  "keywords": [
-    {
-      "term": "intracranial EEG"
-    },
-    {
-      "term": "electrocorticography"
-    },
-    {
-      "term": "visual cortex"
-    },
-    {
-      "term": "gamma oscillations"
-    },
-    {
-      "term": "BOLD response"
-    },
-    {
-      "term": "local field potential"
-    }
-  ],
-  "source_hash": "723d1c8ee63826cbc0edf1e175b176d5e61f56191b98580c85cb5350fd46bc76"
+  "source_hash": "9db21fc940d987bf065dd84f9b90b01f09fe9a5339b2cf9820222742b1c817cc"
 }
