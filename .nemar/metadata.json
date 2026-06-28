@@ -1,34 +1,90 @@
 {
   "version": "2.0",
-  "dataset_id": "on005953",
-  "source": "openneuro",
-  "source_id": "ds005953",
+  "pipeline_stage": "validated",
   "title": "iEEG_visual",
-  "authors": {
-    "Jonathan Winawer": {},
-    "Dora Hermes": {}
-  },
   "license": "CC0",
   "dataset_type": "raw",
+  "authors": {
+    "Jonathan Winawer": {},
+    "Dora Hermes": {
+      "orcid": "0000-0002-8683-8909"
+    }
+  },
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds005953.v1.0.0",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on005953",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on005953",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1093/cercor/bhu091",
+      "identifier_type": "DOI",
+      "relation_type": "IsReferencedBy"
+    },
+    {
+      "identifier": "10.1371/journal.pbio.2001461",
+      "identifier_type": "DOI",
+      "relation_type": "IsReferencedBy"
     }
-  ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.0.2",
-  "recording_modality": [
-    "ieeg"
-  ],
-  "datatypes": [
-    "ieeg"
   ],
   "funding_references": [
     {
-      "funder_name": "This research has received funding from the National Institute Of Mental Health of the National Institutes of Health under Award Number R01MH111417"
+      "funder_name": "National Institute of Mental Health",
+      "award_number": "R01MH111417"
+    },
+    {
+      "funder_name": "Netherlands Organization for Scientific Research",
+      "award_number": "016.VENI.178.048"
     }
   ],
-  "acknowledgements": "This dataset was made available with the support of the Netherlands Organization for Scientific Research www.nwo.nl under award number 016.VENI.178.048 to Dora Hermes and the National Institute Of Mental Health of the National Institutes of Health under Award Number R01MH111417 to Natalia Petridou and Jonathan Winawer. The ECoG data collection was facilitated by the Stanford Human Intracranial Cognitive Electrophysiology Program (SHICEP)."
+  "modalities": [
+    "ieeg"
+  ],
+  "resource_type_specific": "iEEG Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".eeg",
+    ".gii",
+    ".json",
+    ".md",
+    ".png",
+    ".tsv",
+    ".vhdr",
+    ".vmrk"
+  ],
+  "description": "This intracranial EEG dataset comprises recordings from 2 subjects performing a visual task involving presentation of gratings and noise patterns. The dataset was collected to investigate stimulus-dependent gamma oscillations in human visual cortex and the relationship between neuronal synchrony and the blood-oxygen-level dependent response. Raw data are organized according to the BIDS specification and include electrocorticographic recordings, event timing metadata, and visual stimulus images.",
+  "methods_description": "Subjects were presented with visual stimuli (high-contrast vertical gratings with varying duty cycles and noise patterns) displayed on a computer screen spanning approximately 25×25 degrees of visual angle. Subjects maintained fixation on a centrally-located dot that alternated between red and green at random intervals. Subject 1 performed a button-press response task upon color changes, while Subject 2 maintained fixation without manual responses. Intracranial EEG data were collected using the BrainVision data format.",
+  "keywords": [
+    {
+      "term": "intracranial EEG"
+    },
+    {
+      "term": "electrocorticography"
+    },
+    {
+      "term": "visual cortex"
+    },
+    {
+      "term": "gamma oscillations"
+    },
+    {
+      "term": "BOLD response"
+    },
+    {
+      "term": "local field potential"
+    }
+  ],
+  "source_hash": "723d1c8ee63826cbc0edf1e175b176d5e61f56191b98580c85cb5350fd46bc76"
 }
