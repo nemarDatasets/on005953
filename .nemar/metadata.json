@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "validated",
+  "pipeline_stage": "enriched",
   "title": "iEEG_visual",
-  "description": "This intracranial EEG dataset contains recordings from 2 subjects performing a visual task involving presentation of gratings and noise patterns. The dataset includes raw ECoG data, stimulus files, and metadata organized according to BIDS specification. The data were collected to investigate stimulus-dependent gamma oscillations in human visual cortex and the relationship between neuronal synchrony and hemodynamic responses.",
-  "methods_description": "Subjects performed a visual fixation task while viewing images spanning approximately 25×25 degrees of visual angle. Stimuli included high-contrast vertical gratings (0.16, 0.33, 0.65, or 1.3 duty cycles per degree square wave) and noise patterns with varying spectral power distributions (k/f^4, k/f^2, k/f^0). A central fixation dot alternated between red and green at random intervals. Subject 1 performed button presses upon color changes; Subject 2 maintained fixation without manual responses. ECoG data were recorded using the Brainvision data format.",
+  "description": "This dataset contains intracranial EEG (ECoG) recordings from two subjects performing a visual fixation task involving high-contrast gratings and noise pattern stimuli. The data were collected to investigate stimulus-dependent gamma oscillations and the relationship between neuronal synchrony, BOLD responses, and local field potentials in human visual cortex. The dataset supports two published studies on visual cortical electrophysiology.",
+  "methods_description": "Subjects viewed images spanning approximately 25x25 degrees of visual angle on a computer screen while fixating on a dot that changed color at random times. Stimuli included high-contrast vertical gratings at various spatial frequencies and noise patterns with different spectral power distributions. ECoG data were recorded and stored in BrainVision format.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -14,24 +14,34 @@
   },
   "keywords": [
     {
-      "term": "intracranial EEG"
+      "term": "Electrocorticography"
     },
     {
-      "term": "electrocorticography"
+      "term": "ECoG"
     },
     {
-      "term": "Visual Cortex",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D014793"
+      "term": "Visual Cortex"
     },
     {
       "term": "gamma oscillations"
     },
     {
+      "term": "iEEG"
+    },
+    {
+      "term": "BOLD response"
+    },
+    {
       "term": "local field potential"
     },
     {
-      "term": "visual stimulus"
+      "term": "grating stimuli"
+    },
+    {
+      "term": "fixation task"
+    },
+    {
+      "term": "noise stimuli"
     }
   ],
   "related_identifiers": [
